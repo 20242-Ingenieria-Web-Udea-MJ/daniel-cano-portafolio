@@ -24,15 +24,15 @@ export default function Home() {
   };
 
   return (
-    <div className="grid grid-cols-[25%_1fr_5%] gap-6 h-screen overflow-hidden w-3/4 mx-auto">
+    <div className="grid grid-cols-[25%_1fr_5%] gap-2 xl:gap-6 h-screen overflow-hidden xl:w-4/5 mx-auto">
       {showContact && <Overlay onCloseContact={handleCloseContact} />}
       {showContact && <Contact onCloseContact={handleCloseContact} />}
 
       <div className="col-start-1">
         <SkillsSection />
       </div>
-      <div className="col-start-2 grid grid-rows-[1fr_auto] h-screen overflow-y-auto overflow-x-auto">
-        <main className="h-full w-full">
+      <div className="col-start-2 grid grid-rows-[1fr_auto] h-screen overflow-y-auto">
+        <main className="h-full w-full overflow-x-auto">
           <Hero onOpenContact={handleOpenContact} />
           <TitleSecondary>Conocimientos</TitleSecondary>
           <Knowledge />

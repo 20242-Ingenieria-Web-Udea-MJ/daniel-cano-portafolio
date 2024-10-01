@@ -25,7 +25,7 @@ const KNOWLEDGE = [
 
 export const Knowledge = () => {
   return (
-    <section className="grid grid-cols-3 gap-4">
+    <section className="grid lg:grid-cols-3 gap-4">
       {/* Utilizar el arreglo de KNOWLEDGE para crear cada card de conocimiento. */}
       {KNOWLEDGE.map((item) => (
         <KnowledgeCard
